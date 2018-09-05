@@ -5,7 +5,7 @@ $("ul").on("click","li",function(){
 $("input").on("keypress",function (e){
 	if(e.which === 13){
 		var newItem = $(this).val();
-		$("ul").append("<li><span>X </span>"+ newItem +"</li>");
+		$("ul").append("<li><span><i class='fa fa-trash'></i></span> "+ newItem +"</li>");
 		$(this).val("");
 	}
 });
